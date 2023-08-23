@@ -83,8 +83,9 @@ public class Listar extends AppCompatActivity {
                 switch (itemIndex){
                     case 0:
                         Intent intent = new Intent (getApplicationContext(), Editar.class);
-                        intent.putExtra("idcolaborador", 15);
+                        intent.putExtra("idcolaborador", primaryKey);
                         startActivity(intent);
+                        break;
                     case 1:
                         showConfirmDelete(primaryKey);
                     case  2:
